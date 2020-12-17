@@ -3,7 +3,7 @@
 - name: Install and Provision Gitlab
   hosts: gitlabservers
   become: true
-  vars_file:
+  vars_files:
     - vars/gitlab.yml
 
   pre_tasks:
